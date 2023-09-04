@@ -16,7 +16,7 @@ Module SayMyNameAgain
         '[~]Identify user "Emily"
         '[~]Identify user "Joe"
         '[~]Remark on users case sensitivity 
-        '[]Idenity if the user has my name
+        '[~]Idenity if the user has my name
         '[~]Add loop and Quit functionality
         '[~]Add console clear when repeating program
 
@@ -47,6 +47,10 @@ Module SayMyNameAgain
                 Case = "joe"
                     Console.WriteLine("Come on Joe, capitalize that J!" & vbLf)
 
+            'User has my name
+                Case = "Zac", "zac", "Zachary", "zachary"
+                    Console.WriteLine("Hmmm..." & vbLf & "That is my creators name, but YOU are NOT my creator." & vbLf)
+
                     'User Access Denied
                 Case Else
                     Console.WriteLine($"Sorry, no one by the name: {name} is allowed access." & vbLf)
@@ -57,9 +61,7 @@ Module SayMyNameAgain
             cont = Console.ReadLine()
 
             'Idenity exit loop or not
-            If cont = ("Q") Then
-                exitFlag = True
-            ElseIf cont = ("q") Then
+            If cont = ("Q") Or cont = ("q") Then
                 exitFlag = True
             Else
                 exitFlag = False
