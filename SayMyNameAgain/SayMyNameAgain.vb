@@ -11,15 +11,22 @@ Option Strict On
 Module SayMyNameAgain
 
     Sub Main()
+        'TODO 
+        '[]Modify so that only select users get a reply
+        '[]Identify user "Emily"
+        '[]Identify user "Joe"
+        '[]Remark on users case sensitivity 
+        '[]Idenity if the user has my name
 
         Dim name As String
 
         'Console asks user for thier name
         Console.WriteLine("Hello, What is your name?")
 
-        'console sets variable "name" to user input and returns a promt
+        'console sets variable "name" to user input
         name = Console.ReadLine()
-        Console.WriteLine($"Hello, {name}.")
+
+        'Determine response here
 
         'console prompts user to close program
         Console.WriteLine("Please push enter to quit program.")
