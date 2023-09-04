@@ -18,7 +18,7 @@ Module SayMyNameAgain
         '[~]Remark on users case sensitivity 
         '[]Idenity if the user has my name
         '[~]Add loop and Quit functionality
-        '[]Add console clear when repeating program
+        '[~]Add console clear when repeating program
 
         Dim name As String
         Dim exitFlag As Boolean = False
@@ -63,6 +63,7 @@ Module SayMyNameAgain
                 exitFlag = True
             Else
                 exitFlag = False
+                Console.Clear()
             End If
 
         Loop Until exitFlag = True
