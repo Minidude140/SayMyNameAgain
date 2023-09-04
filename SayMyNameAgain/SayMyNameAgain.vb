@@ -61,7 +61,7 @@ Module SayMyNameAgain
                     Console.WriteLine($"Sorry, no one by the name: {name} is allowed access." & vbLf)
             End Select
 
-            'Ask user if they wnt to wuit or continue
+            'Ask user if they want to quit or continue
             Console.WriteLine("Continue?" & vbLf & "(Press Q to quit)" & vbLf)
             cont = Console.ReadLine()
 
@@ -75,6 +75,7 @@ Module SayMyNameAgain
 
         Loop Until exitFlag = True
 
+        'Final Pause before exit could remove
         Console.Read()
 
     End Sub
