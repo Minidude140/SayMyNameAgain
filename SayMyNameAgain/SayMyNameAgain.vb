@@ -30,6 +30,7 @@ Module SayMyNameAgain
 
             'console sets variable "name" to user input
             name = Console.ReadLine()
+            Console.WriteLine()
 
             'Determine response here
             Select Case name
@@ -49,7 +50,11 @@ Module SayMyNameAgain
 
             'User has my name
                 Case = "Zac", "zac", "Zachary", "zachary"
-                    Console.WriteLine("Hmmm..." & vbLf & "That is my creators name, but YOU are NOT my creator." & vbLf)
+                    Console.WriteLine("Hmmm..." & vbLf & "That is my creator's name, but YOU are NOT my creator." & vbLf)
+
+            'Super Secret Entrance 
+                Case = "Jedi Master Christensen"
+                    Console.WriteLine("Ahhh yes. Hello Master." & vbLf & "Welcome back." & vbLf)
 
                     'User Access Denied
                 Case Else
