@@ -34,28 +34,23 @@ Module SayMyNameAgain
 
             'Determine response here
             Select Case name
-            'User Emily
+                'User Emily
                 Case = "Emily"
                     Console.WriteLine("Why Hello, Emily." & vbLf & "Have a great day." & vbLf)
-
-            'User Joe 
+                'User Joe 
                 Case = "Joe"
                     Console.WriteLine("Good to see you again, Joe." & vbLf)
-
-            'Someone didn't use Caps
+                'Someone didn't use Caps
                 Case = "emily"
                     Console.WriteLine("You should try and capitalize that E, miss Emily!" & vbLf)
                 Case = "joe"
                     Console.WriteLine("Come on Joe, capitalize that J!" & vbLf)
-
-            'User has my name
+                'User has my name
                 Case = "Zac", "zac", "Zachary", "zachary"
                     Console.WriteLine("Hmmm..." & vbLf & "That is my creator's name, but YOU are NOT my creator." & vbLf)
-
-            'Super Secret Entrance 
+                'Super Secret Entrance 
                 Case = "Jedi Master Christensen"
                     Console.WriteLine("Ahhh yes. Hello Master." & vbLf & "Welcome back." & vbLf)
-
                     'User Access Denied
                 Case Else
                     Console.WriteLine($"Sorry, no one by the name: {name} is allowed access." & vbLf)
